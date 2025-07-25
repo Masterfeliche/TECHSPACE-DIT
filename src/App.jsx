@@ -56,33 +56,33 @@ function App() {
 
 
           {/* Upcoming Events Banner */}
-        <div className="bg-indigo-800 bg-opacity-50 py-3">
-          <div className="container mx-auto px-6">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center space-x-8">
-                <span className="flex items-center">
-                  <Clock className="w-4 h-4 mr-2" />
-                  <span className="text-blue-200">Next Event:</span>
-                </span>
-                <span className="font-semibold">AI in Healthcare Workshop</span>
-                <span className="flex items-center">
-                  <Calendar className="w-4 h-4 mr-2" />
-                  <span>March 15, 2026</span>
-                </span>
-                <span className="flex items-center">
-                  <MapPin className="w-4 h-4 mr-2" />
-                  <span>Main Auditorium</span>
-                </span>
-              </div>
-              <div className="flex items-center">
-                <span className="mr-4">Speaker: Dr. Esther Kazinja</span>
-                <button className="bg-blue-500 hover:bg-blue-600 px-4 py-1 rounded-full text-sm transition duration-300">
-                  Register Now
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
+          <div className="bg-indigo-800 bg-opacity-50 py-3">
+  <div className="container mx-auto px-4 sm:px-6">
+    <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+      <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-2 sm:space-y-0 sm:space-x-8 w-full">
+        <span className="flex items-center">
+          <Clock className="w-4 h-4 mr-2" />
+          <span className="text-blue-200 text-sm sm:text-base">Next Event:</span>
+        </span>
+        <span className="font-semibold text-base sm:text-lg">AI in Healthcare Workshop</span>
+        <span className="flex items-center">
+          <Calendar className="w-4 h-4 mr-2" />
+          <span className="text-sm sm:text-base">March 15, 2026</span>
+        </span>
+        <span className="flex items-center">
+          <MapPin className="w-4 h-4 mr-2" />
+          <span className="text-sm sm:text-base">Main Auditorium</span>
+        </span>
+      </div>
+      <div className="flex flex-col sm:flex-row items-start sm:items-center w-full md:w-auto">
+        <span className="mr-0 mb-2 sm:mr-4 sm:mb-0 text-sm sm:text-base">Speaker: Dr. Esther Kazinja</span>
+        <button className="bg-blue-500 hover:bg-blue-600 px-4 py-1 rounded-full text-sm transition duration-300 w-full sm:w-auto">
+          Register Now
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
 
         <div className="container mx-auto px-6 py-20">
           <div className="flex flex-col md:flex-row items-center">
@@ -435,156 +435,148 @@ function App() {
       </section>
 
      {/* Contact Form Section */}
-      <section id="contact" className="py-20 bg-gray-100">
-        <div className="container mx-auto px-6">
-          <div className="flex items-center mb-12">
-            <MessageCircle className="w-8 h-8 text-blue-600 mr-4" />
-            <h2 className="text-3xl font-bold">Get in Touch</h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-12">
-            {/* Contact Information */}
-            <div>
-              <div className="bg-white rounded-lg shadow-lg p-8">
-                <h3 className="text-2xl font-semibold mb-6">Let's Build Together</h3>
-                <p className="text-gray-600 mb-8">
-                  We value your feedback and ideas. Whether you want to contribute, suggest improvements, or just say hello, we're here to listen and grow together.
-                </p>
-               
-                <div className="space-y-6">
-                  <div className="flex items-center">
-                    <Mail className="w-6 h-6 text-blue-600 mr-4" />
-                    <div>
-                      <h4 className="font-semibold">Email</h4>
-                      <p className="text-gray-600">info@dit-techtalks.com</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-center">
-                    <Phone className="w-6 h-6 text-blue-600 mr-4" />
-                    <div>
-                      <h4 className="font-semibold">Phone</h4>
-                      <p className="text-gray-600">(255) 456-7890</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-center">
-                    <MapPin className="w-6 h-6 text-blue-600 mr-4" />
-                    <div>
-                      <h4 className="font-semibold">Location</h4>
-                      <p className="text-gray-600">University Campus, TT-7</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="mt-8 pt-8 border-t">
-                  <h4 className="font-semibold mb-4">Connect With Us</h4>
-                  <div className="flex space-x-4">
-                    <a href="#" className="bg-gray-100 p-3 rounded-full hover:bg-blue-100 transition duration-300">
-                      <Twitter className="w-5 h-5 text-blue-600" />
-                    </a>
-                    <a href="#" className="bg-gray-100 p-3 rounded-full hover:bg-blue-100 transition duration-300">
-                      <Linkedin className="w-5 h-5 text-blue-600" />
-                    </a>
-                    <a href="#" className="bg-gray-100 p-3 rounded-full hover:bg-blue-100 transition duration-300">
-                      <Github className="w-5 h-5 text-blue-600" />
-                    </a>
-                  </div>
-                </div>
+      <section id="contact" className="py-16 bg-gray-100">
+  <div className="container mx-auto px-4 sm:px-6">
+    <div className="flex flex-col md:flex-row md:items-center mb-8">
+      <MessageCircle className="w-8 h-8 text-blue-600 mr-4 mb-2 md:mb-0" />
+      <h2 className="text-2xl sm:text-3xl font-bold">Get in Touch</h2>
+    </div>
+    <div className="grid gap-8 md:grid-cols-2">
+      {/* Contact Information */}
+      <div>
+        <div className="bg-white rounded-lg shadow-lg p-6 sm:p-8">
+          <h3 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6">Let's Build Together</h3>
+          <p className="text-gray-600 mb-6 sm:mb-8">
+            We value your feedback and ideas. Whether you want to contribute, suggest improvements, or just say hello, we're here to listen and grow together.
+          </p>
+          <div className="space-y-4 sm:space-y-6">
+            <div className="flex items-center">
+              <Mail className="w-6 h-6 text-blue-600 mr-4" />
+              <div>
+                <h4 className="font-semibold">Email</h4>
+                <p className="text-gray-600 text-sm">info@dit-techtalks.com</p>
               </div>
             </div>
-
-            {/* Contact Form */}
-            <div className="bg-white rounded-lg shadow-lg p-8">
-              <h3 className="text-2xl font-semibold mb-6">Send Us a Message</h3>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <label className="block text-gray-700 mb-2" htmlFor="name">Name</label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                      placeholder="Your name"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-gray-700 mb-2" htmlFor="email">Email</label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                      placeholder="your@email.com"
-                      required
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label className="block text-gray-700 mb-2" htmlFor="category">Category</label>
-                  <select
-                    id="category"
-                    name="category"
-                    value={formData.category}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    required
-                  >
-                    <option value="feedback">General Feedback</option>
-                    <option value="suggestion">Suggestion</option>
-                    <option value="collaboration">Collaboration</option>
-                    <option value="support">Support</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label className="block text-gray-700 mb-2" htmlFor="subject">Subject</label>
-                  <input
-                    type="text"
-                    id="subject"
-                    name="subject"
-                    value={formData.subject}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    placeholder="What's this about?"
-                    required
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-gray-700 mb-2" htmlFor="message">Message</label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    rows={4}
-                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    placeholder="Share your thoughts with us..."
-                    required
-                  ></textarea>
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300 flex items-center justify-center"
-                >
-                  <Send className="w-5 h-5 mr-2" />
-                  Send Message
-                </button>
-              </form>
+            <div className="flex items-center">
+              <Phone className="w-6 h-6 text-blue-600 mr-4" />
+              <div>
+                <h4 className="font-semibold">Phone</h4>
+                <p className="text-gray-600 text-sm">(255) 456-7890</p>
+              </div>
+            </div>
+            <div className="flex items-center">
+              <MapPin className="w-6 h-6 text-blue-600 mr-4" />
+              <div>
+                <h4 className="font-semibold">Location</h4>
+                <p className="text-gray-600 text-sm">University Campus, TT-7</p>
+              </div>
+            </div>
+          </div>
+          <div className="mt-6 pt-6 border-t">
+            <h4 className="font-semibold mb-4">Connect With Us</h4>
+            <div className="flex space-x-4">
+              <a href="#" className="bg-gray-100 p-3 rounded-full hover:bg-blue-100 transition duration-300">
+                <Twitter className="w-5 h-5 text-blue-600" />
+              </a>
+              <a href="#" className="bg-gray-100 p-3 rounded-full hover:bg-blue-100 transition duration-300">
+                <Linkedin className="w-5 h-5 text-blue-600" />
+              </a>
+              <a href="#" className="bg-gray-100 p-3 rounded-full hover:bg-blue-100 transition duration-300">
+                <Github className="w-5 h-5 text-blue-600" />
+              </a>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+      {/* Contact Form */}
+      <div>
+        <div className="bg-white rounded-lg shadow-lg p-6 sm:p-8 max-w-lg mx-auto">
+          <h3 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6">Send Us a Message</h3>
+          <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+            <div className="grid gap-4 sm:gap-6 md:grid-cols-2">
+              <div>
+                <label className="block text-gray-700 mb-2" htmlFor="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="Your name"
+                  required
+                />
+              </div>
+              <div>
+                <label className="block text-gray-700 mb-2" htmlFor="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="your@email.com"
+                  required
+                />
+              </div>
+            </div>
+            <div>
+              <label className="block text-gray-700 mb-2" htmlFor="category">Category</label>
+              <select
+                id="category"
+                name="category"
+                value={formData.category}
+                onChange={handleChange}
+                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                required
+              >
+                <option value="feedback">General Feedback</option>
+                <option value="suggestion">Suggestion</option>
+                <option value="collaboration">Collaboration</option>
+                <option value="support">Support</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div>
+              <label className="block text-gray-700 mb-2" htmlFor="subject">Subject</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                value={formData.subject}
+                onChange={handleChange}
+                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                placeholder="What's this about?"
+                required
+              />
+            </div>
+            <div>
+              <label className="block text-gray-700 mb-2" htmlFor="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                rows={4}
+                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                placeholder="Share your thoughts with us..."
+                required
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300 flex items-center justify-center"
+            >
+              <Send className="w-5 h-5 mr-2" />
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">

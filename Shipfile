@@ -1,2 +1,1 @@
-script: npm install
-run: node server.js --port 3000
+run: npm start --port 4000 --host 0.0.0.0
